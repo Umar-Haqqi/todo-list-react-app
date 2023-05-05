@@ -1,38 +1,86 @@
-.App {
-  text-align: center;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.addTask {
+    background: #0093e9;
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+    gap: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.addTask input {
+    width: 50%;
+    padding: 10px 10px;
+    font-size: 23px;
+    border: none;
+    border-radius: 8px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.addTask button {
+    padding: 10px 50px;
+    border: 3px solid #fff;
+    border-radius: 8px;
+    background: #0093e9;
+    color: #fff;
+    font-size: 23px;
+    font-weight: 600;
 }
 
-.App-link {
-  color: #61dafb;
+.addTask button:hover {
+    cursor: pointer;
+    background: #59bdf7;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.list {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.list h1 {
+    margin-bottom: 10px;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.icons .btn {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+.icons i {
+    font-size: 23px;
+    color: #fff;
+}
+
+.done {
+    background: #00e000;
+}
+.done:hover {
+    background: #00e00080;
+}
+.del {
+    background: #eb0e0e;
+}
+.del:hover {
+    background: #eb0e0e83;
+}
+.completed{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #177e03;
 }
